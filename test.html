@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+  <canvas id="test" width="1000" height="500"></canvas>
+  <!-- <canvas class="test2" width="500" height="500"></canvas> -->
+<script src='./asset/js/jquery-1.11.3.min.js'></script>
+<script>
+  (function() {
+  // http://paulirish.com/2011/requestanimationframe-for-smart-animating/
+  // http://my.opera.com/emoller/blog/2011/12/20/requestanimationframe-for-smart-er-animating
+  // requestAnimationFrame polyfill by Erik MĂ¶ller. fixes from Paul Irish and Tino Zijdel
+  // MIT license
+
+    var lastTime = 1000;
+    var vendors = ['ms', 'moz', 'webkit', 'o'];
+    for(var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
+        window.requestAnimationFrame = window[vendors[x]+'RequestAnimationFrame'];
+        window.cancelAnimationFrame = window[vendors[x]+'CancelAnimationFrame'] 
+                                   || window[vendors[x]+'CancelRequestAnimationFrame'];
+    }
+ 
+    if (!window.requestAnimationFrame)
+        window.requestAnimationFrame = function(callback, element) {
+            var currTime = new Date().getTime();
+            var timeToCall = Math.max(0, 16 - (currTime - lastTime));
+            var id = window.setTimeout(function() { callback(currTime + timeToCall); }, 
+              timeToCall);
+            lastTime = currTime + timeToCall;
+            return id;
+        };
+ 
+    if (!window.cancelAnimationFrame)
+        window.cancelAnimationFrame = function(id) {
+            clearTimeout(id);
+        };
+}());
+  $(document).ready(function(){
+    var canvas = $("#test")[0];
+    console.log(canvas);
+    var ctx = canvas.getContext("2d"),
+      animObjects = [];
+
+    var img = new Image;
+    
+    img.src = "http://localhost/studymake/test/equip/m/face/default/1/show.png";
+    
+    imgCtx = {
+      sx: 0,
+      sy: 0,
+      sWidth: 250,
+      sHeight: 312,
+      dx: 23,
+      dy: 25,
+      dWidth: 130,
+      dHeight: 162,
+      curFrame: 0
+    }
+    imgCtx2 = {
+      sx: 0,
+      sy: 0,
+      sWidth: 250,
+      sHeight: 312,
+      dx: 50,
+      dy: 25,
+      dWidth: 130,
+      dHeight: 162,
+      curFrame: 0
+    }
+    var coin = sprite({
+      context: ctx,
+       width: 1000,
+    height: 312,
+    image: img,
+    numberOfFrames: 4,
+    ticksPerFrame: 3
+    })
+    img.addEventListener("load", gameLoop);
+
+    function gameLoop () {
+
+    window.requestAnimationFrame(gameLoop);
+    
+    coin.update();
+    coin.render();
+  }
+
+// Start the game loop as soon as the sprite sheet is loaded
+    function sprite (options) {
+        
+      var that = {},
+        frameIndex = 0,
+        tickCount = 0,
+        ticksPerFrame = options.ticksPerFrame || 0,
+        numberOfFrames = options.numberOfFrames || 1;
+            
+      that.context = options.context;
+      that.width = options.width;
+      that.height = options.height;
+      that.image = options.image;
+      that.loop = options.loop;
+       that.render = function () {
+         that.context.clearRect(0, 0, 1000, 500);
+        // Draw the animation
+        that.context.drawImage(
+           that.image,
+           frameIndex * that.width / numberOfFrames,
+           0,
+           that.width / numberOfFrames,
+           that.height,
+           0,
+           0,
+           that.width / numberOfFrames,
+           that.height);
+    };   
+      that.update = function () {
+
+           tickCount += 1;
+      
+        if (tickCount > ticksPerFrame) {
+        
+            tickCount = 0;
+          
+            // If the current frame index is in range
+            if (frameIndex < numberOfFrames - 1) {  
+                // Go to the next frame
+                frameIndex += 1;
+                if(frameIndex == 1) frameIndex++;
+            } 
+        } else {
+                frameIndex = 0;
+            }
+      }; 
+      return that;
+  }
+    
+  }) 
+</script>
+</body>
+</html>

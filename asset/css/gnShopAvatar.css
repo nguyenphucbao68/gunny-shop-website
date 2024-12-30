@@ -1,0 +1,8 @@
+canvas#wing{
+	position: absolute;
+	transform: scale(-1, 1);
+}
+canvas#suits, canvas#glass, canvas#head, canvas#cloth, canvas#eff, canvas#face, canvas#hair{
+	position: absolute;
+	transform: scale(-1, 1);
+}

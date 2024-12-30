@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>Sprite Animation Demo</title>
+    </head>
+    <body>
+        <section id="demo" class="demoSection"></section>
+        <script src="http://williammalone.github.io/BlocksJS/build/0.3.20/js/blocksjs-0.3.20.min.js"></script>
+ <script>
+			(function () {
+				
+		        var clock, block, layer;
+		        
+		        // Create a canvas to draw on
+		        layer = BLOCKS.layer({
+					parentElement: document.getElementById("demo")
+				});
+
+		        // Create a block
+		        block = BLOCKS.block();
+
+				// Add a slice to the block
+				block.addSlice({
+					layer: layer, // Create a new canvas for the slice
+					imageSrc: "http://blocksjs.com/demos/block/images/coin.png", // Define sprite sheet location
+					numberOfFrames: 10, // Define number of frames of animation
+					loop: true
+				});
+
+				block2 = BLOCKS.block();
+				block2.addSlice({
+					layer: layer, // Create a new canvas for the slice
+					imageSrc: "http://blocksjs.com/demos/block/images/coin.png", // Define sprite sheet location
+					numberOfFrames: 10, // Define number of frames of animation
+					loop: true,
+					offsetX: 20
+				});
+		        clock2 =  BLOCKS.clock();
+		        // Create a clock
+		        clock = BLOCKS.clock();
+		        
+		        // Update and render the block on each tick of the clock
+		        clock.addEventListener("tick", function () {
+		        	
+			        block.update();
+			        if (block.dirty) { // Clear the layer if the block is dirty
+			        	layer.clear();
+			        }	
+			        block.render();
+		        });
+		        
+		        // Start the clock
+		        clock.start();
+		    } ());
+		    
+		    document.getElementsByClassName("BlocksCanvas")[0].style.width = "inherit";
+		    document.getElementsByClassName("BlocksCanvas")[0].style.height = "inherit";
+	    </script>
+
+    </body>
+</html>

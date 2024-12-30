@@ -1,0 +1,1746 @@
+@media (min-width: 980px){
+	.qa-main{
+		width: 100%;
+	}
+}
+.qa-part-custom2{
+	background-color: #8c7142;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+.panel{
+	border: 2px solid #CFBA78;
+	border-radius: 5px;
+	background-color: #1a0f00;
+	padding: 5px;
+	margin-top: 18px;
+}
+.panel.left{
+	float: left;
+	width: 30.3%;
+	margin-right: 5px;
+}
+.panel.right{
+	float: left;
+	width: 69.2%;
+}
+.panel .panel2{
+	border: 2px solid #935921;
+	border-radius: 5px;
+	background: url('http://localhost/studymake/logo/gunny/shop/bg.png') no-repeat;
+	background-size: 110% 110%;
+	background-position: -10px;
+	padding: 2px;
+	position: relative;
+}
+.panel.left .avatar{
+	width: 314px;
+	height: 314px;
+	border: 2px solid #665b47;
+	border-radius: 5px;
+	background-color: #f1ecd9;
+}
+.panel.left .avatar .info{
+	border-radius: 3px;
+	background: url('http://localhost/studymake/logo/gunny/shop/bg2.png');
+	/*background-size: 110% 110%;*/
+	background-position: -10px;
+	background-color: #7f5d40;
+	height: 34px;
+	z-index: 999;
+}
+.panel.left .avatar .info{
+	padding-top: 5px;
+	padding-left: 10px;
+	color: #fff;
+	font-size: 12px;
+	box-shadow: 0px 1px #777;
+}
+.panel.left .avatar .info .choosesex{
+	float: right;
+	margin-top: -4px;
+}
+.info .choosesex div{
+	display: inline-block;
+	width: 70px;
+	height: 35px;
+	background-size: 70px 28px;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	opacity: 0.9;
+	position: relative;
+	z-index: 999;
+}
+.info .choosesex div:hover{
+	opacity: 1;
+}
+.info .choosesex #male{
+	background-image: url('http://localhost/studymake/logo/gunny/shop/m.png');
+
+}
+.info .choosesex #female{
+	background-image: url('http://localhost/studymake/logo/gunny/shop/fm.png');
+}
+.info .choosesex #male.active{
+	background-image: url('http://localhost/studymake/logo/gunny/shop/mactive.png');
+}
+.info .choosesex #female.active{
+	background-image: url('http://localhost/studymake/logo/gunny/shop/fmactive.png');
+}
+.avatar-view{
+	position: relative;
+}
+.avatar-view .gunny{
+	height: 314px;
+	position: relative;
+	top: -295px;
+	z-index: 1;
+}
+canvas#wing{
+	position: absolute;
+	left: -37px;
+	top: -54px;
+	z-index: 1;
+	transform: scale(-1, 1);
+}
+canvas#suits, canvas#glass, canvas#head, canvas#cloth, canvas#eff, canvas#face, canvas#hair{
+	position: absolute;
+	left: 81px;
+	top: -17px;
+	z-index: 2;
+	transform: scale(-1, 1);
+}
+.avatar-view .frame{
+	/*border: 2px solid #888;*/
+	width: 50px;
+	height: 51px;
+	border-radius: 5px;
+	background-color: #d9cfb2;
+	-webkit-box-shadow: inset 2px 2px 3px #6b5d5d;
+	-moz-box-shadow: inset 2px 2px 3px #6b5d5d;
+	box-shadow: inset 2px 2px 3px #6b5d5d;
+	text-align: center;
+	font-weight: bold;
+	padding-top: 17px;
+	color: #cebe92;
+	font-size: 12px;
+	text-shadow: 2px 0 0 #a54e4e, -2px 0 0 #a54e4e, 0 2px 0 #a54e4e, 0 -2px 0 #a54e4e, 1px 1px #a54e4e, -1px -1px 0 #a54e4e, 1px -1px 0 #a54e4e, -1px 1px 0 #a54e4e;
+	cursor: pointer;
+	z-index: 100;
+}
+.avatar-view .frame .animate-border-blink{
+	display: block;
+	background-size: 50px 51px;
+	width: 50px;
+	height: 51px;
+}
+.avatar-view .frame div:not(.animate-border-blink){
+	top: 0px;
+}
+.avatar-view .frame div{
+	background-size: 47px 48px;
+	width: 50px;
+	height: 51px;
+	position: absolute;
+	left: 3px;
+	top: 3px;
+}
+.avatar-view .frame[cat="head"]{
+	position: absolute;
+	top: 5px;
+	left: 5px;
+}
+
+.avatar-view .frame[cat="hair"]{
+	position: absolute;
+	top: 61px;
+	left: 5px;
+}
+
+.avatar-view .frame[cat="cloth"]{
+	position: absolute;
+	top: 117px;
+	left: 5px;
+}
+
+.avatar-view .frame[cat="suits"]{
+	position: absolute;
+	top: 173px;
+	left: 5px;
+}
+
+.avatar-view .frame[cat="glass"]{
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
+
+.avatar-view .frame[cat="eff"]{
+	position: absolute;
+	top: 61px;
+	right: 5px;
+}
+
+.avatar-view .frame[cat="face"]{
+	position: absolute;
+	top: 117px;
+	right: 5px;
+}
+
+.avatar-view .frame[cat="wing"]{
+	position: absolute;
+	top: 173px;
+	right: 5px;
+}
+.avatar-view .btn-save{
+	background: url('http://localhost/studymake/logo/gunny/shop/btn.png') no-repeat;
+	position: absolute;
+	left: 3px;
+	background-size: 138px 43px;
+	height: 42px;
+	width: 136px;
+	top: 226px;
+	overflow: hidden;
+	border-radius: 11px;
+	border: 2px solid transparent;
+	box-sizing: content-box;
+	animation: flickerBorder 1.5s 2s infinite;
+}
+@keyframes flickerBorder{
+	0%{
+		border: 2px solid #a0ff00;
+	}
+	100%{
+		border: 2px solid transparent;
+	}
+}
+.avatar-view .btn-save.disabled{
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+	filter: gray;
+	-webkit-filter: grayscale(100%);
+    -webkit-transition: all .6s ease;
+	-webkit-backface-visibility: hidden;
+	cursor: default;
+	animation: none;
+}
+.avatar-view .btn-save.disabled .animate{
+	display: none;
+}
+.btn-save .animate{
+	background: url('http://localhost/studymake/logo/gunny/shop/animate.png') no-repeat;
+	background-size: 50px 100px ;
+	height: 100px;
+	width: 50px;
+	position: absolute;
+	top: -12px;
+	left: -70px;
+	transform: rotate(32deg);
+	/*transition: all 900ms ease 0s;*/
+	animation: animateWhite 1.5s 2s infinite;
+}
+@keyframes animateWhite{
+	0%{
+		top: -12px;
+		left: -70px;
+	},
+	50%{
+		top: -12px;
+		left: 95px;
+	}
+	100%{
+		top: -10px;
+		left: 140px;
+	}
+}
+.btn-save .text-save{
+	background: url('http://localhost/studymake/logo/gunny/shop/save-text.png') no-repeat;
+	height: 42px;
+	width: 129px;
+	margin-top: 5px;	
+	margin-left: 10px;
+	cursor: pointer;
+}
+.avatar-view .btn-back{
+	background: url('http://localhost/studymake/logo/gunny/shop/back.png') no-repeat;
+	position: absolute;
+	left: 64px;
+	height: 42px;
+	width: 129px;
+	top: 193px;
+	cursor: pointer;
+	z-index: 99;
+}
+.avatar-view .btn-back:active{
+	top: 194px;
+	left: 65px;
+}
+.avatar-view .btn-random{
+	background: url('http://localhost/studymake/logo/gunny/shop/btn-random.png') no-repeat;
+	position: absolute;
+	left: 109px;
+	height: 26px;
+	width: 62px;
+	top: 193px;
+	font-size: 10px;
+	color: #fff;
+	padding-top: 3px;
+	padding-left: 3px;
+	text-shadow: 2px 0 0 #a54e4e, -2px 0 0 #a54e4e, 0 2px 0 #a54e4e, 0 -2px 0 #a54e4e, 1px 1px #a54e4e, -1px -1px 0 #a54e4e, 1px -1px 0 #a54e4e, -1px 1px 0 #a54e4e;
+	cursor: pointer;
+	z-index: 99;
+}
+.btn-close{
+	background-image:url('http://localhost/studymake/logo/gunny/shop/btn-random.png');
+	background-repeat: no-repeat;
+	background-size: 21px 25px; 
+	width: 21px;
+	height: 25px;
+	display: inline-block;
+	text-align: center;
+	font-size: 13px;
+	vertical-align: middle;
+	padding-top: 3px;
+	float: right;
+	margin-right: 9px;
+	opacity: 1;
+	cursor: pointer;
+}
+.avatar-view .btn-random:active{
+	top: 194px;
+	left: 110px;
+}
+
+.filter-btn:hover{
+	filter: hue-rotate(90deg);
+	-webkit-filter: hue-rotate(90deg);
+	-webkit-backface-visibility: hidden;
+}
+.avatar-view .hidden{
+	position: absolute;
+	top: 230px;
+	right: 5px;
+	font-size: 12px;
+	font-weight: bold;
+	background-color: #beab80;
+	border: 2px solid #9e7a39;
+	border-radius: 4px;
+	z-index: 99;
+}
+.filter{
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+	filter: gray;
+	-webkit-filter: grayscale(100%);
+    -webkit-transition: all .6s ease;
+	-webkit-backface-visibility: hidden;
+	cursor: default;
+}
+.avatar-view .ultimate-check{
+	position: absolute;
+	left: 59px;
+	top: 3px;
+	font-size: 12px;
+	padding-top: 5px;
+	z-index: 999;
+}
+.avatar-view .ultimate-check input{
+	vertical-align: middle;
+	margin-top: 3px;
+}
+.avatar-view .hidden .hide{
+	width: 50%;
+	padding: 5px;
+}
+.avatar-view .hidden .hide input{
+	vertical-align: middle;
+	margin: 0 2px;
+}
+.avatar-view #hidden-text{
+	position: absolute;
+	top: 211px;
+	right: 87px;
+	text-shadow: 2px 0 0 #a54e4e, -2px 0 0 #a54e4e, 0 2px 0 #a54e4e, 0 -2px 0 #a54e4e, 1px 1px #a54e4e, -1px -1px 0 #a54e4e, 1px -1px 0 #a54e4e, -1px 1px 0 #a54e4e;
+	color: #fff;
+}
+
+.panel.left .action{
+	margin-top: 50px;
+	border-radius: 3px;
+	background: url('http://localhost/studymake/logo/gunny/shop/bg2.png');
+	background-position: -10px;
+	background-color: #b99366;
+	height: 195px;
+	border: 2px solid #665b47;
+	padding: 5px;
+}
+.action .bag-money{
+	background: url('http://localhost/studymake/logo/gunny/shop/bg2.png');
+	background-position: -10px;
+	background-color: #f5deaa;
+	height: 120px;
+	border: 1px dashed #eacf9a;
+	border-radius: 5px;
+	position: relative;
+}
+.bag-money #tabs-2 {
+	text-align: center;
+}
+.bag-money .btn-buy{
+	position: absolute;
+	background: url('http://localhost/studymake/logo/gunny/shop/btn-buy.png') no-repeat;
+	width: 95px;
+	height: 89px;
+	bottom: 10px;
+	right: 5px;
+	cursor: pointer;
+}
+.bag-money .btn-buy:hover{
+	opacity: 0.9;
+}
+.bag-money .frame-money{
+	position: absolute;
+	left: 10px;
+	bottom: 10px;
+	height: 87px;
+	background-color: #997f5b;
+	border-radius: 4px;
+	width: 181px;
+	padding: 3px;
+}
+.frame-money .asset-span{
+	background-color: #ba9a62;
+	min-width: 103px;
+	color: #f3eee0;
+	text-shadow: 2px 0 0 #88680a, -2px 0 0 #88680a, 0 2px 0 #88680a, 0 -2px 0 #88680a, 1px 1px #88680a, -1px -1px 0 #88680a, 1px -1px 0 #88680a, -1px 1px 0 #88680a;
+	border-radius: 4px;
+	font-weight: bold;
+	text-align: right;
+	padding-top: 4px;
+	border: 1px solid #8c6464;
+	font-size: 14px;
+	padding-right: 5px;
+}
+.frame-money .asset-icon{
+	background: none no-repeat center/100% transparent;
+	width: 26px;
+	height: 26px;
+	float: left;
+	vertical-align: middle;
+	margin-top: -5px;
+}
+.bag-money #taisan-text{
+	position: absolute;
+	top: 7px;
+	left: 16px;
+	font-weight: bold;
+	color: #f8e8a8;
+	font-size: 13px;
+	text-shadow: 2px 0 0 #a54e4e, -2px 0 0 #a54e4e, 0 2px 0 #a54e4e, 0 -2px 0 #a54e4e, 1px 1px #a54e4e, -1px -1px 0 #a54e4e, 1px -1px 0 #a54e4e, -1px 1px 0 #a54e4e;
+}
+.action .button{
+	padding-top: 10px;
+	text-align: center;
+}
+.action .button .btn-ask{
+	background: url('http://localhost/studymake/logo/gunny/shop/btn-ask.png') no-repeat;
+	width: 92px;
+	height: 52px;
+	display: inline-block;
+	cursor: pointer;
+	border: 2px solid transparent;
+}
+.action .button .btn{
+	width: 92px;
+	height: 52px;
+	display: inline-block;
+	cursor: pointer;
+	border: 2px solid transparent;
+}
+.flight{
+	
+	/*box-sizing: content-box;*/
+	animation: flickerBorder 1.5s 2s infinite;
+	border-radius: 8px;
+}
+.action .button.disabled .btn, .action .button.disabled .btn-ask{
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+	filter: gray;
+	-webkit-filter: grayscale(100%);
+    -webkit-transition: all .6s ease;
+	-webkit-backface-visibility: hidden;
+	cursor: default;
+}
+.action .button .btn.give{
+	background: url('http://localhost/studymake/logo/gunny/shop/give.png') no-repeat;
+	background-size: 89px 49px;
+	padding-top: 5px;
+	padding-left: 6px;
+}
+.action .button .btn.give div{
+	background: url('http://localhost/studymake/logo/gunny/shop/give-txt.png') no-repeat;
+	width: 76px;
+	height: 37px;
+}
+.action .button .btn.buy{
+	background: url('http://localhost/studymake/logo/gunny/shop/buy.png') no-repeat;
+	background-size: 89px 49px;
+	padding-top: 6px;
+	padding-left: 11px;
+}
+.action .button .btn.buy div{
+	background: url('http://localhost/studymake/logo/gunny/shop/buy-txt.png') no-repeat;
+	width: 76px;
+	height: 37px;	
+}
+.phong-thu-img{
+	background: url('http://localhost/studymake/logo/gunny/shop/phongthu.png') no-repeat;
+	width: 299px;
+	height: 48px;
+	position: absolute;
+	top: 5px;
+	left: 21px;
+}
+.shop-img{
+	background: url('http://localhost/studymake/logo/gunny/shop/shop.png') no-repeat;
+	width: 401px;
+	height: 48px;
+	position: absolute;
+	top: 5px;
+	left: 351px;
+}
+.search-item{
+	position: absolute;
+	right: 100px;
+	top: 3px;
+}
+.search-item #search-box{
+	position: relative;
+    display: inline-block;
+}
+.search-item #search-box #result{
+	display: block;
+    position: absolute;
+    background-color: #3e2410;
+    min-width: 200px;
+    max-width: 240px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 27px;
+    left: 2px;
+    color: #fff;
+    padding: 5px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    font-family: tahoma;
+	font-size: 12px;
+}
+.search-item #search-box #result #other-result{
+	margin-bottom: 0px;
+}
+.search-item #search-box #result #other-result a{
+	color: #fff;
+}
+.search-item #search-box #result #other-result a:hover{
+	color: #ff0;
+}
+.search-item #result .frame{
+	margin-bottom: 3px;
+	padding: 4px;
+	cursor: pointer;
+}
+.search-item #result .frame:hover{
+	background-color: #920b0b;
+}
+.search-item #result .frame .picture{
+	width: 70px;
+	height: 73px;
+	position: absolute;
+	left: -83px;
+	/*top: -15px;*/
+	margin-top: -40px;
+	background-color: #fff;
+	display: none;
+	background: none no-repeat center/100% transparent;
+	border: 2px solid #920b0b;
+	border-radius: 4px;
+	background-color: #553216;
+	float: left;
+	-moz-box-shadow:    inset 0 0 8px #000000;
+   	-webkit-box-shadow: inset 0 0 8px #000000;
+   	box-shadow:         inset 0 0 8px #000000;
+}
+.search-item #result .frame:hover .picture{
+	display: block;
+}
+.search-item #result .frame .picture .arrow{
+	position: absolute;
+	left: 68.8px;
+	top: 20px;
+	height: 0px;
+	border-top:12px solid transparent;
+	border-bottom:12px solid transparent;
+	border-left:12px solid #920b0b;
+}
+.search-item #result .frame .name-result{
+	font-size: 13px;
+	font-weight: bold;
+	white-space: nowrap;
+}
+.search-item #result .frame .name-result span{
+	color: #00b2f9;
+}
+.search-item #result .frame .name-result #sold{
+	color: #cc3636;
+}
+.search-item #result .frame .desc{
+	font-size: 12px;
+	color: #ab8989;
+	white-space: nowrap;
+	overflow:hidden;
+
+}
+.search-item input{
+	border: 2px solid #906c33;
+	border-radius: 4px;
+	background-color: #85673d;
+	-moz-box-shadow:    inset 0 0 10px #000000;
+   	-webkit-box-shadow: inset 0 0 10px #000000;
+   	box-shadow:         inset 0 0 10px #000000;
+   	font-size: 12px;
+   	height: 28px;
+   	color: #f8e8a8;
+   	text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+	margin-top: 1px;
+	float: left;
+}
+.search-item input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  	color: #f8e8a8;
+   	text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+.search-item input::-moz-placeholder { /* Firefox 19+ */
+  	color: #f8e8a8;
+   	text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+.search-item input:-ms-input-placeholder { /* IE 10+ */
+  	color: #f8e8a8;
+   	text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+.search-item input:-moz-placeholder { /* Firefox 18- */
+  	color: #f8e8a8;
+   	text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+.search-item .btn-search{
+	background: url('http://localhost/studymake/logo/gunny/shop/btn-search.png') no-repeat;
+	width: 79px;
+	height: 30px;
+	display: inline-block;
+	float: right;
+	background-size: 60px 30px;
+	color: #f8e8a8;
+	   	text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+	font-weight: bold;
+	padding-left: 15px;
+	padding-top: 3px;
+}
+
+/** Panel Right */
+.panel.right .panel2{
+	overflow: hidden;
+	padding: 4px;
+	height: 567px;
+}
+.shop-item{
+	width: 64%;
+	height: 456px;
+	float: left;
+	margin-top: 10px;
+	position: relative;
+}
+.item-show{
+	height: 100%;
+	background-color: #ad804a;
+	margin-top: -3px;
+	border: 2px solid #665b47;
+	border-radius: 4px;
+	 -moz-box-shadow: inset 1px 1px 2px #ffffff;
+    -webkit-box-shadow: inset 1px 1px 2px #ffffff;
+     box-shadow: inset 1px 1px 2px #ffffff;
+     position: relative;
+}
+
+.shop-item .tab-cat .btn{
+	background: url('http://localhost/studymake/logo/gunny/shop/btn-menu.png') no-repeat;
+	background-size: 83px 42px;
+	width: 83px;
+	height: 42px;
+	font-size: 12px;
+	color: #f8e8a8;
+	text-shadow: 2px 0 0 #88680a, -2px 0 0 #88680a, 0 2px 0 #88680a, 0 -2px 0 #88680a, 1px 1px #88680a, -1px -1px 0 #88680a, 1px -1px 0 #88680a, -1px 1px 0 #88680a;
+	font-weight: bold;
+	padding-top: 10px;
+	display: inline-block;
+	text-align: center;
+	cursor: pointer;
+}
+.shop-item .tab-cat .btn.active{
+	background: url('http://localhost/studymake/logo/gunny/shop/btn-menu-active.png') no-repeat;
+	background-size: 90px 45px;
+	width: 90px;
+	height: 45px;
+	font-size: 13px;
+	padding-top: 13px;
+	text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+.shop-item .item-show .sub-tab{
+	padding-top: 10px;
+	padding-left: 4px;
+	/*border-bottom: 2px solid #c1a461;*/
+}
+.item-show .sub-tab #result-txt{
+	font-weight: bold;
+	margin-left: 5px;
+	color: #fff;
+}
+.shop-item .item-show .sub-tab .btn{
+	display: inline-block;
+	background: url('http://localhost/studymake/logo/gunny/shop/btn-submenu.png') no-repeat;
+	background-size: 77px 38px;
+	width: 77px;
+	height: 38px;
+	padding-top: 8px;
+	text-align: center;
+	font-size: 14px;
+	color: #a4d4aa;
+	text-shadow: 2px 0 0 #18484d, -2px 0 0 #18484d, 0 2px 0 #18484d, 0 -2px 0 #18484d, 1px 1px #18484d, -1px -1px 0 #18484d, 1px -1px 0 #18484d, -1px 1px 0 #18484d;
+	cursor: pointer;
+}
+.shop-item .item-show .sub-tab .btn.active{
+	background: url('http://localhost/studymake/logo/gunny/shop/btn-submenu-active.png') no-repeat;
+	background-size: 78px 40px;
+	width: 78px;
+	height: 40px;
+	font-weight: bold;
+	color: #e1f1e3;
+}
+.shop-item .item-show .border{
+	background: url('http://localhost/studymake/logo/gunny/shop/border.png') no-repeat;
+	background-size: 100% 5px;
+	width: 102.4%;
+	height: 5px;
+	margin-left: -12px;
+	margin-top: -3px;
+}
+.shop-item .item-show .show{
+	padding: 5px;
+}
+.shop-item .item-show .show .item-frame{
+	background: #755128;
+	border: 2px solid #c49750;
+	border-radius: 4px;
+	width: 49.5%;
+	display: inline-block;
+	padding: 7px;
+	position: relative;
+}
+.shop-item .item-show .show .item-frame.active{
+background: #e5d8b5; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover, #e5d8b5 0%, #d8bf86 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover, #e5d8b5 0%,#d8bf86 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center, #e5d8b5 0%,#d8bf86 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5d8b5', endColorstr='#d8bf86',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	border: 2px solid #bb9b47;
+	box-shadow: inset 0 0 10px #000000;
+}
+.item-frame .zzInfo{
+	visibility: hidden;
+	background-color: #000;
+    color: #fff;
+    border-radius: 4px;
+   	width: 263px;
+    position: absolute;
+    top: 0px;
+    left: 90px;
+    opacity: 0;
+    transition: opacity 0.5s;
+    text-align: left;
+    border: 1px solid #888;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 999;
+}
+.zzInfo#bottom{
+	top: 84px;
+    left: 84px;
+}
+.zzInfo#center{
+	top: -74px;
+    left: 84px;
+}
+.zzInfo#top{
+	top: -174px;
+    left: 84px;
+}
+.zzInfo .power-item{
+	overflow: hidden;
+}
+.zzInfo .power-item p{
+	padding-left: 5px;
+}
+.item-frame.show-info .zzInfo{
+	visibility: visible;
+	opacity: 0.8;
+}
+.zzinfo .power-item{
+	position: relative;
+}
+.zzInfo #name{
+	font-weight: bold;
+	text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+	font-size: 14px;
+	margin-bottom: 4px;
+	margin-top: 3px;
+}
+.zzInfo #description{
+	color: #fff;
+	font-size: 13px;
+	text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+	margin-right: 5px;
+	word-wrap: break-word;
+      white-space: -moz-pre-wrap;
+      white-space: pre-wrap; 
+}
+.border-info{
+	background: url('http://localhost/studymake/logo/gunny/shop/border-info-2.png') no-repeat;
+	background-repeat: no-repeat;
+	background-position: 1px;
+	background-size: 316px 2px;
+	width: 316px;
+	height: 2px;
+	margin-left: -95px;
+	border-bottom: 12px solid #000000;
+	margin-top: 10px;
+	box-sizing: content-box;
+}
+.zzInfo .properties{
+	color: #ff9933;
+	font-weight: bold;
+	text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+	font-size: 13px;
+	padding-left: 5px;
+	margin-bottom: 8px;
+}
+.zzInfo #state-item{
+	font-size: 12px;
+	color: #80ff00;
+	font-weight: bold;
+	margin-bottom: 6px;
+	text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+
+.zzInfo .field-main{
+	font-size: 12px;
+	margin-bottom: 2px;
+}
+.zzInfo .field-main:after{
+	margin-left: 67px;
+	margin-top: -5px;
+	background: url('http://localhost/studymake/logo/gunny/shop/border-info.png') no-repeat;
+	background-repeat: no-repeat;
+    background-position: right bottom;
+    width: 90px;
+	height: 2px;
+	content: " ";
+    display: block;
+}
+.zzInfo .field-main strong{
+	margin-top: -10px;
+	font-size: 15px;
+	text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+	font-family: Courier New;
+	margin-left: 15px;
+}
+.zzInfo .field-main span{
+	color: #000;
+	text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+	font-weight: bold;
+	vertical-align: middle;
+}
+
+.zzInfo.d1 #name, .zzInfo.d1 .field-main#quality{
+	color: #c9c9c9;
+}
+.zzInfo.d2 #name, .zzInfo.d2 .field-main#quality{
+	color: #1eff00;
+}
+.zzInfo.d3 #name, .zzInfo.d3 .field-main#quality{
+	color: #0282ff;
+}
+.zzInfo.d4 #name, .zzInfo.d4 .field-main#quality{
+	color: #a335ee;
+}
+.zzInfo.d5 #name, .zzInfo.d5 .field-main#quality{
+	color: #ff5400;
+}
+.animate-border-blink{
+	display: none;
+	background: url('http://localhost/studymake/logo/gunny/shop/item-selected.png') no-repeat;
+	background-size: 72px 74px;
+	width: 72px;
+	height: 74px;
+	margin-left: -3px;
+	margin-top: -3px;
+	animation: flickerAnimation 1.2s infinite;
+}
+@keyframes flickerAnimation {
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+.item-frame .img{
+	background: none no-repeat center/100% transparent;
+	width: 70px;
+	height: 73px;
+	border: 2px solid #926a3b;
+	border-radius: 4px;
+	background-color: #553216;
+	float: left;
+	-moz-box-shadow:    inset 0 0 8px #000000;
+   	-webkit-box-shadow: inset 0 0 8px #000000;
+   	box-shadow:         inset 0 0 8px #000000;
+	position: relative;
+	cursor: pointer;
+}
+.item-frame.active .img{
+	background-color: #e57800;
+}
+.item-frame:hover .img .animate-border-blink{
+	display: block;
+}
+.item-frame .img .select-item{
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	padding:15% 10%;
+	bottom:0;
+	opacity:0;
+}
+.item-frame:hover .img .select-item{
+	opacity: 1;
+}
+.item-frame .img .select-item span{
+	color: #fff;
+	position:absolute;
+	bottom: -10px;
+	left: 0px;
+	-webkit-transition: all 0.3s;
+  	transition: all 0.3s;
+}
+.item-frame:hover .img .select-item span{
+	bottom: 0px;
+}
+.span-state.hot{
+	background: transparent url(http://localhost/studymake/logo/gunny/hot-icon.png) no-repeat center/100% ;	
+}
+.span-state.new{
+	background: transparent url(http://localhost/studymake/logo/gunny/new-icon.png) no-repeat center/100% ;	
+}
+
+.item-frame .img .span-state{
+	width: 54px;
+	height: 39px;
+	float: left;
+	position: absolute;
+	top: -11px;
+	left: -14px;
+	-webkit-transition: all 0.4s;
+  	transition: all 0.4s;
+  	background-size: 54px 39px;
+  	opacity: 1;
+}
+.item-frame:hover .img .span-state{
+	top: -40px;
+	opacity: 0;
+}
+.item-frame .info{
+	float: left;
+	padding-left: 5px;
+	font-size: 11px;
+	width: 66%;
+	color: #f8e8a8;
+	font-weight: bold;
+	text-shadow: 2px 0 0 #88680a, -2px 0 0 #88680a, 0 2px 0 #88680a, 0 -2px 0 #88680a, 1px 1px #88680a, -1px -1px 0 #88680a, 1px -1px 0 #88680a, -1px 1px 0 #88680a;
+	position: relative;
+}
+.item-frame .info .name-item{
+	position: absolute;
+	top: 0px;
+	left: 7px;
+	/*margin-bottom: 1px;
+	margin-top: -5px;*/
+	line-height: 13px;
+	font-size: 12px;
+	/*word-wrap: break-word;*/
+}
+.hot-item .item-frame .name-item{
+	font-size: 13px;
+	top: 2px;
+}
+.hot-item .item-frame .img{
+	/*background-color: #e41010;*/
+	box-shadow: inset 0 0 8px #2135ad;
+}
+.item-frame .info .cost{
+	position: absolute;
+	top: 30px;
+	left: 7px;
+	width: 100%;
+}
+.item-frame .info .btn{
+	border-top: 1px dashed #432F1A;
+	position: absolute;
+	top: 50px;
+	left: 7px;
+}
+.item-frame .info .btn .action-btn{
+	background: none no-repeat center/100% transparent;
+	background-size: 42px 23px;
+	background-repeat: none;
+	width: 42px;
+	height: 23px;
+	display: inline-block;
+	cursor: pointer;
+}
+.currency{
+	background: none no-repeat center/100% transparent;
+	width: 23px;
+	height: 17px;
+	float: right;
+	background-size: 23px 20px;
+}
+/*.name-item .currency{
+	display: inline-block;
+	float: none;
+	background-size: 19px 16px;
+	width: 19px;
+	height: 16px;
+	vertical-align: middle;
+	margin-top: -3px;
+}*/
+.shop-item .phantrang{
+	position: absolute;
+	bottom: -82px;
+	right: 30px;
+	cursor: pointer;
+}
+.shop-item .phantrang .btn.disabled{
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+	filter: gray;
+	-webkit-filter: grayscale(100%);
+    -webkit-transition: all .6s ease;
+	-webkit-backface-visibility: hidden;
+	cursor: default;
+}
+.shop-item .phantrang .btn.dau{
+	background: url('http://localhost/studymake/logo/gunny/shop/dau.png') no-repeat;
+}
+.shop-item .phantrang .btn.trai{
+	background: url('http://localhost/studymake/logo/gunny/shop/trai.png') no-repeat;
+}
+.shop-item .phantrang .btn.phai{
+	background: url('http://localhost/studymake/logo/gunny/shop/phai.png') no-repeat;
+}
+.shop-item .phantrang .btn.cuoi{
+	background: url('http://localhost/studymake/logo/gunny/shop/cuoi.png') no-repeat;
+}
+.shop-item .phantrang .btn{
+	background-size: 54px 25px;
+	width: 54px;
+	height: 25px;
+	display: inline-block;
+}
+.shop-item .phantrang .state{
+	display: inline-block;
+}
+.shop-item .phantrang .state input{
+	
+	border: 2px solid #906c33;
+	border-radius: 4px;
+	background-color: #85673d;
+	-moz-box-shadow:    inset 0 0 10px #000000;
+   	-webkit-box-shadow: inset 0 0 10px #000000;
+   	box-shadow:         inset 0 0 10px #000000;
+   	font-size: 12px;
+   	height: 28px;
+   	width: 60px;
+   	float: left;
+   	margin-bottom: -1px;
+   	text-align: center;
+   	color: #f8e8a8;
+   	text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+.hot-item{
+	float: left;
+	width: 35%;
+	padding-left: 7px;
+	position: relative;
+}
+.hot-item .bg{
+	margin-top: 35px;
+	background: url('http://localhost/studymake/logo/gunny/shop/bg2.png');
+	background-color: #814a22;
+	border-radius: 3px;
+	border: 2px solid #5a3a25;
+	height: 505px;
+	padding: 5px;
+}
+.hot-item .show-item{
+	background: url('http://localhost/studymake/logo/gunny/shop/bg2.png');
+	background-color: #9f704a;
+	border: 1.3px dashed #b0835d;
+	border-radius: 4px;
+	height: 100%;
+	padding-top: 12px;
+	padding-left: 8px;
+}
+.hot-item .show-item #loading{
+/*	width: 93%;
+	height: 91%;
+	background: #fff;
+	opacity: 0.3;
+	position: absolute;
+	top: 43px;
+	left: 14px;*/
+	color: #fff;
+}
+.hot-item .show-item .item-frame{
+	overflow: hidden;
+	margin-bottom: 6px;
+}
+.hot-item .tab-bg{
+	position: absolute;
+	top: 7px;
+	left: 7px;
+	background: url('http://localhost/studymake/logo/gunny/shop/bg2.png');
+	background-color: #814a22;
+	border-radius: 3px;
+	border: 2px solid #5a3a25;
+	border-bottom: none;
+	padding: 5px;
+	width: 112px;
+}
+.hot-item .tab-nav{
+	background: url('http://localhost/studymake/logo/gunny/shop/bg2.png');
+	background-color: #9f704a;
+	border: 1.3px dashed #b0835d;
+	border-radius: 7px 7px 0px 0px;
+	height: 100%;
+	border-bottom: none;
+	margin-bottom: -6px;
+}
+.hot-item .tab-nav #buy-many-txt{
+	background: url('http://localhost/studymake/logo/gunny/shop/buy-many-text.png') no-repeat;
+	width: 97px;
+	height: 28px;
+}
+.panel.left .tab-action{
+	position: absolute;
+}
+.bag-money#tabs .tab{
+	position: absolute;
+	top: -40px;
+	background: none;
+	border: none;
+}
+.bag-money#tabs .tab li{
+	border: 1px dashed #eacf9a;
+	border-bottom: none;
+	background: url('http://localhost/studymake/logo/gunny/shop/bg2.png');
+	border-radius: 7px 7px 0px 0px;
+}
+.bag-money#tabs .tab li:not(.ui-state-active):not(.ui-state-disabled){
+	animation: tabNonActive 1.5s 2s infinite;
+}
+@keyframes tabNonActive{
+	0%{
+		border: 2px solid transparent;
+		background-color: #83512b;
+	}
+	50%{
+		border: 2px solid #a0ff00;
+		background-color: #b77441;
+	}
+	100%{
+		border: 2px solid transparent;
+		background-color: #83512b;
+	}
+}
+/*.bag-money#tabs .tab li:not(.ui-tabs-active){
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+	filter: gray;
+	-webkit-filter: grayscale(100%);
+    -webkit-transition: all .6s ease;
+	-webkit-backface-visibility: hidden;
+	
+}
+.bag-money#tabs .tab li:not(.ui-tabs-active) a{
+	cursor: default;
+}*/
+.disabled{
+	/*filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");*/
+	filter: gray;
+	-webkit-filter: grayscale(100%);
+    -webkit-transition: all .6s ease;
+	-webkit-backface-visibility: hidden;
+	cursor: default;
+}
+.bag-money#tabs .tab li.ui-tabs-active{
+	background-color: #f5deaa;
+}
+.bag-money#tabs .tab li{
+	background-color: #83512b;
+}
+.bag-money#tabs .tab li a{
+	color: #cfb17d;
+	font-size: 14px;
+	text-shadow: 2px 0 0 #88680a, -2px 0 0 #88680a, 0 2px 0 #88680a, 0 -2px 0 #88680a, 1px 1px #88680a, -1px -1px 0 #88680a, 1px -1px 0 #88680a, -1px 1px 0 #88680a;
+
+}
+.bag-money#tabs .tab li.ui-tabs-active a{
+	color: #fffbe9;
+	text-shadow: 2px 0 0 #88680a, -2px 0 0 #88680a, 0 2px 0 #88680a, 0 -2px 0 #88680a, 1px 1px #88680a, -1px -1px 0 #88680a, 1px -1px 0 #88680a, -1px 1px 0 #88680a;
+	font-weight: bold;
+	font-size: 16px;
+}
+.jscolor{
+	border: 2px solid #906c33;
+	border-radius: 4px;
+	background-color: #85673d;
+	-moz-box-shadow:    inset 0 0 10px #000000;
+   	-webkit-box-shadow: inset 0 0 10px #000000;
+   	box-shadow:         inset 0 0 10px #000000;
+   	font-size: 12px;
+   	height: 28px;
+   	color: #f8e8a8;
+   	text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+	margin-top: 1px;
+	float: left;
+	width: 100%;
+}
+.btn2{
+	display: inline-block;
+	color: #f8e8a8;
+	   text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+	font-weight: bold;
+	padding-top: 8px;
+	text-align: center;
+	cursor: pointer;
+	opacity: 1;
+}
+.btn-color-make{
+	background: url('http://localhost/studymake/logo/gunny/shop/btn-search.png');
+	background-repeat: no-repeat;
+	background-size: 82px 37px;
+	width: 82px;
+	height: 37px;
+}
+.btn-color-reset{
+	background: url('http://localhost/studymake/logo/gunny/shop/btn-reset-color.png');
+	background-repeat: no-repeat;
+	background-size: 82px 37px;
+	width: 82px;
+	height: 37px;
+}
+.btn2:hover{
+	opacity: 0.85;
+}
+
+/* Cart */
+#gio-hang .item-frame{
+/*	max-height: 450px;
+    overflow: auto;*/
+    border: 1px solid #ddd;
+    /*background-color: #445f7a;*/
+    border-radius: 3px;
+    box-shadow: 1px 1px #ddd;
+    padding: 3px;
+    border-radius: 5px;
+	background: url('http://localhost/studymake/logo/gunny/shop/bg.png') no-repeat;
+	background-size: 110% 110%;
+	background-position: -10px;
+}
+#gio-hang .item-frame .buy-frame{
+	margin-top: 5px;
+	/*background-color: #526980;*/
+	border-radius: 5px;
+	text-align: center;
+	padding: 7px 0px;
+	background: #ac8453; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover, #ac8453 0%, #a87842 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover, #ac8453 0%,#a87842 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center, #ac8453 0%,#a87842 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ac8453', endColorstr='#a87842',GradientType=1 );
+	border: 1px solid #d3ac69;
+}
+#gio-hang .item-frame .buy-frame .buy-confirm{
+	background: rgb(242,130,91); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(242,130,91,1) 0%, rgba(229,91,43,1) 50%, rgba(240,113,70,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(242,130,91,1) 0%,rgba(229,91,43,1) 50%,rgba(240,113,70,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(242,130,91,1) 0%,rgba(229,91,43,1) 50%,rgba(240,113,70,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2825b', endColorstr='#f07146',GradientType=0 ); /* IE6-9 */
+	border: 2px solid #c50f0f;
+	border-radius: 3px;
+	font-size: 18px;
+	color: rgb(251, 255, 218);
+	text-shadow: 2px 0 0 #6d4545, -2px 0 0 #6d4545, 0 2px 0 #6d4545, 0 -2px 0 #6d4545, 1px 1px #6d4545, -1px -1px 0 #6d4545, 1px -1px 0 #6d4545, -1px 1px 0 #6d4545;
+	font-weight: bold;
+	padding: 8px 5px;
+}
+#gio-hang .item-frame .buy-frame .buy-confirm:hover{
+	opacity: 0.9;
+}
+#gio-hang .item-frame .list-item{
+	background: #ac8453; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover, #ac8453 0%, #a87842 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover, #ac8453 0%,#a87842 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center, #ac8453 0%,#a87842 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ac8453', endColorstr='#a87842',GradientType=1 );
+-moz-box-shadow: inset 1px 1px 2px #ffffff;
+    -webkit-box-shadow: inset 1px 1px 2px #ffffff;
+     box-shadow: inset 1px 1px 2px #ffffff;
+	border-radius: 3px;
+	border: 1px solid #777;
+	padding: 5px 3px;
+	overflow: auto;
+	max-height: 300px;
+}
+
+/* Let's get this party started */
+#gio-hang .item-frame .list-item::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+/* Track */
+#gio-hang .item-frame .list-item::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    /*border-radius: 10px;*/
+}
+ 
+/* Handle */
+#gio-hang .item-frame .list-item::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(255,0,0,0.8); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+#gio-hang .item-frame .list-item::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(255,0,0,0.4); 
+}
+#gio-hang .item-frame .list-item #alert-txt{
+	text-align: center;
+	font-size: 13px;
+	padding-top: 5px;
+	color: #f8e8a8;
+	font-weight: bold;
+	text-shadow: 2px 0 0 #88680a, -2px 0 0 #88680a, 0 2px 0 #88680a, 0 -2px 0 #88680a, 1px 1px #88680a, -1px -1px 0 #88680a, 1px -1px 0 #88680a, -1px 1px 0 #88680a;
+}
+#gio-hang .item-frame #total-item-num{
+	text-align: center;
+	margin: 5px 2px;
+	font-weight: bold;
+}
+#gio-hang .item-frame #total-item-num strong{
+	color: #888;
+	text-shadow: 2px 0 0 #6d4545, -2px 0 0 #6d4545, 0 2px 0 #6d4545, 0 -2px 0 #6d4545, 1px 1px #6d4545, -1px -1px 0 #6d4545, 1px -1px 0 #6d4545, -1px 1px 0 #6d4545;
+}
+#gio-hang .item-frame .total-cost{
+	position: relative;
+	background: url('http://localhost/studymake/logo/gunny/shop/bg2.png');
+	background-position: -10px;
+	background-color: #7f5d40;
+	margin-top: 13px;
+	border-radius: 3px;
+	padding: 4px 3px 4px 5px;
+	border: 2px solid #542e13;
+}
+#gio-hang .total-cost .title-cost{
+	position: absolute;
+	font-size: 20px;
+	font-weight: bold;
+	color: #adec5d;
+	top: -17px;
+	left: 15px;
+	text-shadow: 2px 0 0 #6d4545, -2px 0 0 #6d4545, 0 2px 0 #6d4545, 0 -2px 0 #6d4545, 1px 1px #6d4545, -1px -1px 0 #6d4545, 1px -1px 0 #6d4545, -1px 1px 0 #6d4545;
+}
+#gio-hang .total-cost .cost-span{
+	padding-left: 5px;
+	color: #c0f7aa;
+	font-weight: bold;
+}
+#gio-hang .total-cost .cost-span .input-cost-span{
+	background-color: #825f38;
+	padding: 4px 15px;
+	font-weight: bold;
+	color: #c0f7aa;
+	text-shadow: 2px 0 0 #6d4545, -2px 0 0 #6d4545, 0 2px 0 #6d4545, 0 -2px 0 #6d4545, 1px 1px #6d4545, -1px -1px 0 #6d4545, 1px -1px 0 #6d4545, -1px 1px 0 #6d4545;
+	border-radius: 3px;
+	border: 2px solid #634a35;
+	-webkit-box-shadow:inset 0 0 10px #000;
+       -moz-box-shadow:inset 0 0 10px #000;
+            box-shadow:inset 0 0 10px #000;
+}
+#gio-hang .total-cost .frame-cost{
+	border: 1.3px dashed #b0835d;
+	/*background-color: #4b5b6b;*/
+	background: url('http://localhost/studymake/logo/gunny/shop/bg2.png');
+	background-position: -10px;
+	background-color: #9f704a;
+	padding: 9px 3px;
+	border-radius: 4px;
+	text-align: center;
+}
+#gio-hang .item-show-shop{
+	margin-top: 3px;
+	background: #755128;
+	border: 2px solid #c49750;
+	border-radius: 4px;
+	padding: 7px;
+	position: relative;
+	overflow: hidden;
+	text-shadow: 2px 0 0 #88680a, -2px 0 0 #88680a, 0 2px 0 #88680a, 0 -2px 0 #88680a, 1px 1px #88680a, -1px -1px 0 #88680a, 1px -1px 0 #88680a, -1px 1px 0 #88680a;
+		font-size: 11px;
+	color: #f8e8a8;
+	font-weight: bold;
+}
+#gio-hang .item-show-shop .btn-remove-item{
+	position: absolute;
+	top: 4px;
+	right: 4px;
+	background-color: #3e5c7b;
+	border: 1px solid #5177a0;
+	border-radius: 3px;
+	color: #888;
+}
+#gio-hang .item-show-shop .btn-remove-item:hover{
+	background-color: #486888;
+}
+#gio-hang .item-show-shop .img-item{
+	background: none no-repeat center/100% transparent;
+	width: 70px;
+	height: 73px;
+	border: 2px solid #926a3b;
+	border-radius: 4px;
+	background-color: #553216;
+	float: left;
+	-moz-box-shadow:    inset 0 0 8px #000000;
+   	-webkit-box-shadow: inset 0 0 8px #000000;
+   	box-shadow:         inset 0 0 8px #000000;
+	position: relative;
+}
+#gio-hang .item-show-shop .name-item{
+	padding-left: 82px;
+	margin-top: -3px;
+	font-size: 13px;
+}
+#gio-hang .item-show-shop .info-item{
+	position: absolute;	
+	top: 30px;
+	left: 87px;
+	font-size: 11px;
+}
+#gio-hang .item-show-shop .count-item{
+	position: absolute;
+	top: 30px;
+	left: 87px;
+}
+#gio-hang .item-show-shop .border-info{
+	margin-left: 68px;
+	border-bottom: none;
+	margin-top: -10px;
+}
+#gio-hang .item-show-shop .count-item input{
+	width: 50px;
+	border: 2px solid #906c33;
+	border-radius: 4px;
+	background-color: #85673d;
+	-moz-box-shadow:    inset 0 0 10px #000000;
+   	-webkit-box-shadow: inset 0 0 10px #000000;
+   	box-shadow:         inset 0 0 10px #000000;
+   	font-size: 12px;
+   	height: 28px; 
+   	color: #f8e8a8;
+   	text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+#gio-hang .item-show-shop .renewal-item{
+	float: right;
+	padding-right: 40px;
+}
+#gio-hang .item-show-shop .renewal-item .time-renew{
+	margin-bottom: -6px;
+	cursor: pointer;
+	font-size: 13px;
+}
+#gio-hang .item-show-shop .renewal-item .time-renew.active:before{
+	content: "\f046";
+	color: #fff;
+}
+#gio-hang .item-show-shop .renewal-item .time-renew:before{
+	content: "\f096";
+	font-family: FontAwesome;
+	margin-right: 10px;
+	font-size: 20px;
+	vertical-align: middle;
+	color: darkturquoise;
+	font-weight: 100;
+	color: #fff;
+}
+#gio-hang .item-show-shop .renewal-item .time-renew span{
+	padding-left: 5px;
+}
+#gio-hang {
+	background-color: #3b2302;
+	padding: 6px;
+	border-bottom-left-radius: 7px;
+border-bottom-right-radius: 7px;
+	
+}
+.ui-dialog[aria-describedby="gio-hang"]{
+	padding: 0px!important;
+	border-radius: 7px;
+}
+.ui-dialog[aria-describedby="gio-hang"] .ui-dialog-titlebar{
+	background-color: #3b2302;
+	color: #fff;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+
+	border: none;
+}
+#gio-hang .bag-check-icon{
+	background: transparent url(http://localhost/studymake/logo/bag-check.png) no-repeat center/100% ;
+	width: 15px;
+	height: 22px;
+	float: left;
+}
+
+.tooltip .message{
+	visibility: hidden;
+    min-width: 152px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 3px;
+    border-radius: 4px;
+    border: 1px solid #888;
+    position: absolute;
+    z-index: 100;
+    margin-left: -77px;
+    margin-top: 30px;
+    opacity: 0;
+    transition: opacity 0.3s;
+	font-weight: 400;
+	box-shadow:
+    inset 0 0 0 1px #eee,
+    inset 0 0 0 1px #eee,
+    inset 0 0 0 1px #eee,
+    inset 0 0 0 1px #eee,
+    inset 0 0 0 1px #eee,
+    inset 0 0 0 1px #eee,
+    inset 0 0 0 1px #eee;
+    font-size: 12px;
+    text-shadow: none;
+}
+.tooltip:hover .message{
+	visibility: visible;
+    opacity: 0.9;
+}
+.main-alert{
+	/*text-align: center;*/
+}
+
+.main-alert .ig-annouce{
+	background-size: 718px 135px;
+	width: 718px;
+	height: 135px;
+	font-size: 12px;
+	color: #f8e8a8;
+}
+.main-alert .ig-annouce[type="bought"]{
+	background-image: url('http://localhost/studymake/logo/gunny/shop/alert/1.png');
+}
+.alert-panel{
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+	background-color: rgba(0,40,53,.7);
+	transition: .2s ease-out;
+	width: 85%;
+	height: 35px;
+}
+.alert-panel::before{
+	content: "";
+	background: url('http://localhost/studymake/logo/gunny/shop/alert/face1.png') no-repeat;
+	width: 68px;
+	height: 68px;
+	float: left;
+	margin-left: -16px;
+	margin-top: -18px;
+	transform: scaleX(-1);
+}
+.alert-panel p{
+	z-index: 101;
+	font-family: Tahoma;
+	color: #ffff00;
+	margin-top: 5px;
+	display: inline-block;
+}
+.alert-panel p span{
+	font-weight: bold;
+}
+.alert-panel .close-btn{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	cursor: pointer;
+	background-color: #000;
+	padding: 0px 4px;
+	color: #fff;
+	font-size: 11px;
+}
+#save-image{
+	text-align: center;
+}
+#save-image #setting-image{
+	display: block;
+	text-align: left;
+}
+#save-image #weapon-setting{
+	vertical-align: top;
+	color: #972dc1;
+	border-bottom: 1px dotted blue;
+	cursor: pointer;
+}
+#save-image #weapon-setting:hover{
+	color: #ad80bf;
+}
+#save-image .options{
+	margin: 7px 0;
+	border: 1px solid #888;
+	padding: 5px;
+}
+#save-image #circle-setting, #save-image #student-setting, #save-image #badge-setting{
+	padding: 5px;
+	margin: 5px 0;
+	width: 100%;
+} 
+#save-image #love-setting{
+	width: 20px;
+	height: 20px;
+	border-radius: 0px;
+	text-align: left;
+}
+#save-image .options input{
+	width: 100%;
+}
+.btn-save-me {
+	background-color: #000;
+	color: #fff!important;
+	padding: 10px;
+	border: none;
+	box-shadow: 3px 3px #777;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+}
+.btn-save-me:hover{
+	background-color: #bd4848;
+	box-shadow: none;
+}
+.btn-save-me::before{
+	content: "";
+	background: url('http://localhost/studymake/logo/gunny/shop/download-image.png') no-repeat;
+	width: 15px;
+	height: 15px;
+	/*float: left;*/
+	background-size: 15px 15px;
+	margin-right: 6px;
+	display: inline-block;
+}
+.ui-state-focus{
+	border: none!important;
+}
+.alert-panel .view-equip{
+	position: relative;
+	display: inline-block;
+	color: #fff;
+	cursor: pointer;
+	margin-left: 5px;
+}
+.alert-panel .view-equip:hover{
+	color: #e8e7fd;
+}
+.alert-panel .list{
+	position: absolute;
+	min-width: 200px;
+	margin-top: 8px;
+	background-color: #3e2410;
+	color: #fff;
+	padding: 5px;
+	visibility: hidden;
+	/*top: 10px;*/
+
+}
+.alert-panel .view-equip:hover .list{
+	visibility: visible;
+}
+.alert-panel .list .item{
+	font-size: 13px;
+	font-weight: bold;
+}
+.alert-panel .list .item span{
+	color: #e2e207;
+	font-weight: 400;
+}
+.center-col{
+	text-align: center;
+}
+#weapon-select #search-box div{
+	float: left;
+}
+#weapon-data tr{
+	cursor: pointer;
+}
+div[aria-describedby="weapon-select"]{
+	z-index: 1002;
+}
+div[aria-describedby="save-image"]{
+	z-index: 1001;
+}
+#weapon-select #loading{
+	background-color: #000;
+	opacity: 0.8;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+	text-align: center;
+	color: #fff;
+	font-size: 20px;
+	padding-top: 10px;
+	display: none;
+}
+.prefix-alert{
+	font-weight: bold;
+	color: #f8e8a8;
+}
+[gnPluginHtml]{
+	display: none;
+}
